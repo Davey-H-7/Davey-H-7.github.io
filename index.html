@@ -7,6 +7,8 @@
         <link rel ='stylesheet' href = 'style.css'>
         <meta name ='viewpoort' content ='width=device-width, initial-scale=1'>
     </head>
+
+
     <body>
         <header class ='neutral-theme'>
             <div class = 'header-circle primary-theme'>
@@ -16,10 +18,11 @@
                 <img src = './images/me.jpg' alt ='My profile photo. A handsome man with glasses in a blue suit with a white shirt and an orange floral tie.'class ='header-img'>
             </div>
             <div class = 'button-div'>
-                <a href ='#main' class ='button header-link'>Find out more</a>
-                <a href ='#projects' class ='button header-link'>My work</a>
+                <a href ='#main' class ='header-link'>Find out more</a>
+                <a href ='#projects' class ='header-link'>My work</a>
             </div>
         </header>
+
         <main id ='main'>
             <section class ='about primary-theme'>
                 <h2> About me </h2>
@@ -27,17 +30,18 @@
                     <img src = './images/dodgeball.jpeg' alt ='My profile photo. A handsome man with glasses in a blue suit with a white shirt and an orange floral tie.'class ='about-img'>
                     <div class ='about-text'>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime consequatur facilis ut numquam culpa veniam molestias assumenda iure inventore? Explicabo quam earum perspiciatis molestiae esse ratione quo? Sequi, et pariatur.
+                        Havng grown up opn the East Coast in Fife, I moved to Glasgow for uni where I studied EEE (Electronic and Electrical Engineering) at Strathclyde university. After graduating with a BEng (Honours) I went to work as an Engineer in Building Services.
                     </p>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis expedita necessitatibus, ducimus obcaecati sequi laudantium, ab odio rerum, dolor earum explicabo facere ullam. Tempore similique iusto eveniet inventore exercitationem cupiditate?
+                        With 5 years work experience under my belt I then made the life-changing decision to transfer my skills into Software Engineering and undertook CodeClan's 16-week Professional Software Development course where I discovered my passion and aptitude for coding.
                     </p>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia provident non sit inventore. Voluptatibus consequatur, beatae fuga officia, exercitationem nemo rerum ducimus adipisci tempora amet assumenda praesentium vero deserunt qui.
+                        Outside of work and coding, I have had a lifelong love of video gaming, especially Nintendo. Also I am currently a member of Glasgow's premier dodgeball team, the Kelvin Rapids, regularly representing them in National competitions (see action shot).
                     </p>
-                    <a href='#' class ='button'> My Resume </a>
+                    <a href='https://drive.google.com/file/d/1n6qumldwK4v95DPEx03jdRCVxOvA5VF0/view?usp=sharing' class ='button'> My Resume </a>
                 </div>
             </div>
+
             <blockquote>
                     "I like coding"
                 <cite>
@@ -45,40 +49,58 @@
                 </cite>
             </blockquote>
             </section>
-            <section id ='projects' class ='neutral-theme'>
+
+            <section id ='projects' class ='projects neutral-theme'>
                 <h2> Projects </h2>
                 <article>
-                    <div class="'article-text">
-                    <h3> Project Title</h3>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, saepe alias, eum at repudiandae officiis non excepturi, blanditiis dolor ducimus facere? Repudiandae quas provident assumenda expedita dolorum amet aperiam pariatur?</p>
-                    <a href = '#' class ='button'> See it live </a>
-                    <a href = '#' class ='button'> Fork it on GitHub </a>
-                </div>
-                    <img src = '#' alt ='project screenshot' class ='article-image'>
+                        <h3> Dramm Synthesizer</h3>
+                        <p>Objective: To create a fun application, based on a therimin, which will be capable of changing sounds and visuals in reponse to users touch. </p>
+                        <div class = 'article-content'>
+                            <img src = './images/Dramm.png' alt ='screenshot of synthesizer project' class ='article-image'>
+                            <div class="'article-text">
+                                <h4>Tech Stack</h4>
+                                <p>Languages: JavaScript, CSS Frontend with Java Backend </p>
+                                <p>Database: Mongodb (Non-relational) </p>
+                                <p>Frameworks: React & Spring </p>
+                                <p>Additional Libraries: ToneJS to create synth sounds, P5JS to display interactive visual elements </p>
+                            </div>
+                        </div>
+                        <a href = 'https://github.com/R-McCluskey/DRAMM_Synthesizer' class ='button'> Fork it on GitHub </a>
                 </article>
                 <article>
+                    <h3>Cam's Casino</h3>
+                    <p>Objective: To create a game, similar to Blackjack where users are dealt cards and can add to their hand in order to reach a total closer to 21 than the dealer. Stats on wins/losses are then stored and can be viewed by the player. </p>
+                    <div class = 'article-content'>
+                        <img src = './images/Cams-Casino.png' alt ='screenshot of card game project' class ='article-image'>
+                        <div class="'article-text">
+                            <h4>Tech Stack</h4>
+                            <p>Languages: JavaScript front and backend with CSS styling </p>
+                            <p>Database: Mongodb (Non-relational) </p>
+                            <p>Frameworks: React & Express </p>
+                            <p>Additional: Fetches from Deck of Cards API </p>
+                        </div>
+                    </div>
+                    <a href = 'https://github.com/Dannycarey23/blackjack2' class ='button'> Fork it on GitHub </a>
+            </article>
+            <article>
+                <h3> Sickley's Veterinary Surgery</h3>
+                <p>Objective: To create a full-stack application for management of a veterinary practice, giving full CRUD functionality of vet staff, registered pets and owners. </p>
+                <div class = 'article-content'>
+                    <img src = './images/Sickleys.png' alt ='screenshot of vet management' class ='article-image'>
                     <div class="'article-text">
-                    <h3> Project Title</h3>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, saepe alias, eum at repudiandae officiis non excepturi, blanditiis dolor ducimus facere? Repudiandae quas provident assumenda expedita dolorum amet aperiam pariatur?</p>
-                    <a href = '#' class ='button'> See it live </a>
-                    <a href = '#' class ='button'> Fork it on GitHub </a>
+                        <h4>Tech Stack</h4>
+                        <p>Languages: Python backend, HTML5 & CSS Frontend </p>
+                        <p>Database: PostgreSQL (relational) </p>
+                        <p>Frameworks: Flask </p>
+                    </div>
                 </div>
-                    <img src = '#' alt ='project screenshot' class ='article-image'>
-                </article>
-                <article>
-                    <div class="'article-text">
-                    <h3> Project Title</h3>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, saepe alias, eum at repudiandae officiis non excepturi, blanditiis dolor ducimus facere? Repudiandae quas provident assumenda expedita dolorum amet aperiam pariatur?</p>
-                    <a href = '#' class ='button'> See it live </a>
-                    <a href = '#' class ='button'> Fork it on GitHub </a>
-                </div>
-                    <img src = '#' alt ='project screenshot' class ='article-image'>
-                </article>
+                <a href = 'https://github.com/Davey-H-7/Vet_management_app' class ='button'> Fork it on GitHub </a>
+        </article>
             </section>
             <section class ='primary-theme contact'>
                 <h2> Contact </h2>
                 <p> If you are interested in working with me, feel free to drop me a message!</p>
-                <a href="davemalhunter@gmail.com" class ='button'> Let's talk </a>
+                <a href="mailto:davemalhunter@gmail.com?subject=Nice%20Website!" class ='button'> Let's talk </a>
             </section>
         </main>
         <footer>

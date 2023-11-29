@@ -34,7 +34,7 @@ header {
 h1 {
 
     margin-bottom: 2rem;
-    font-size:clamp(25px, 4vh, 75px);
+    font-size:clamp(25px, 4svh, 75px);
     font-weight: bold;
     line-height: 1.4em;
     width: 80vw;
@@ -48,11 +48,11 @@ h1 {
 }
 
 .header-circle {
-    height:clamp(600px, 60vh, 800px);
-    width: clamp(600px, 60vh, 800px);
+    height:clamp(600px, 60svh, 800px);
+    width: clamp(600px, 60svh, 800px);
     border-radius: 50%;
     position:absolute;
-    top:clamp(400px, 50vh, 30vh);
+    top:clamp(400px, 50svh, 30svh);
     left:0%;
     display: flex;
     justify-content: center;
@@ -87,7 +87,7 @@ h1 {
 
 .button-div {
     position: absolute;
-    bottom: 10%;
+    bottom: 10svh;
     right: 5%;
     width: clamp(400px, 40%, 100%);
 }
@@ -96,10 +96,10 @@ h1 {
 .header-link {
     display: inline-block;
     width: max-content;
-    padding: 1vh;
+    padding: 1svh;
     border: 5px solid var(--button-color);
     font-weight: bold;
-    font-size: clamp(20px, 3vh, 50px);
+    font-size: clamp(20px, 3svh, 50px);
     text-decoration: none;
     color: var(--button-color);
     border-radius: 10px;
@@ -179,10 +179,10 @@ cite {
 .button {
     display: inline-block;
     width: max-content;
-    padding: 1vh;
+    padding: 1svh;
     border: 5px solid var(--button-color);
     font-weight: bold;
-    font-size: clamp(15px, 2vh, 50px);
+    font-size: clamp(15px, 2svh, 50px);
     text-decoration: none;
     color: var(--button-color);
     border-radius: 10px;
@@ -221,8 +221,8 @@ h4 {
 
 .article-image {
     margin-bottom: 2rem;
-    max-width: 600px;
-    height: 30vh;
+    max-width: 30vw;
+    height: 30svh;
     object-fit:scale-down;
 
 }
@@ -289,8 +289,8 @@ footer {
     }
 
     .header-circle {
-        height: min(50vh, 100vw);
-        width: min(50vh, 100vw);
+        height: min(50svh, 100vw);
+        width: min(50svh, 100vw);
         border-radius: 50%;
        left: 0 ;
         top: 38vh;
@@ -301,8 +301,8 @@ footer {
     }
 
     .image-circle {
-        height: min(38vh, 100vw);
-        width: min(38vh, 100vw);
+        height: min(38svh, 100vw);
+        width: min(38svh, 100vw);
         background-color: rgb(54, 48, 98);
         border-bottom-left-radius: 100%;
         position:absolute;
@@ -311,7 +311,7 @@ footer {
     }
     
     .header-img {
-        max-width: 25vh;
+        max-width: 25svh;
         margin-bottom: 1rem;
         filter: grayscale(100%);
         position: absolute;
@@ -324,7 +324,7 @@ footer {
 
     .button-div{
         margin: auto;
-        bottom: 3%;
+        bottom: 3svh;
         width: 100%;
         right: 0%;
         display: flex;
@@ -356,11 +356,11 @@ footer {
 
 @media (min-width: 700px) and (max-width: 1200px) {
     .header-circle {
-        height: 50vh;
-        width: 50vh;
+        height: 50svh;
+        width: 50svh;
         border-radius: 50%;
         position:absolute;
-        top: 38vh;
+        top: 38svh;
         left:0%;
         display: flex;
         justify-content: center;
@@ -368,8 +368,8 @@ footer {
     }
 
     .image-circle {
-        height: 38vh;
-        width: 38vh;
+        height: 38svh;
+        width: 38svh;
         background-color: rgb(54, 48, 98);
         border-bottom-left-radius: 100%;
         position:absolute;
@@ -378,11 +378,11 @@ footer {
     }
     
     .header-img {
-        max-width: 25vh;
+        max-width: 25svh;
         margin-bottom: 1rem;
         filter: grayscale(100%);
         position: absolute;
-        bottom: 30%;
+        bottom: 30svh;
         left: 30%;
         border-radius:30px;
     }
@@ -391,9 +391,9 @@ footer {
 
     .button-div{
         margin: auto;
-        bottom: 5vh;;
+        bottom: 5svh;;
         width: 100vw;
-        height: 5vh;
+        height: 5svh;
         right: 0%;
         display: flex;
         justify-content: center;

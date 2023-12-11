@@ -14,9 +14,11 @@ html {
 }
 
 .neutral-theme {
+    color:white;
     background-color: var(--secondary);
     --button-color: var(--primary);
     --button-hover-color:var(--secondary);
+
 }
 
 .primary-theme {
@@ -34,7 +36,7 @@ header {
 h1 {
 
     margin-bottom: 2rem;
-    font-size:clamp(25px, 4svh, 75px);
+    font-size:clamp(20px, 4svh, 75px);
     font-weight: bold;
     line-height: 1.4em;
     width: 80vw;
@@ -48,11 +50,11 @@ h1 {
 }
 
 .header-circle {
-    height:clamp(600px, 60svh, 800px);
-    width: clamp(600px, 60svh, 800px);
+    height: min( 80svh, 800px);
+    width: min(80svh, 800px);
     border-radius: 50%;
     position:absolute;
-    top:clamp(400px, 50svh, 30svh);
+    top: 30vh;
     left:0%;
     display: flex;
     justify-content: center;
@@ -60,8 +62,8 @@ h1 {
 }
 
 .image-circle {
-    height: min(60vw, 700px);
-    width: min(60vw, 700px);
+    height: min(66vh, 700px);
+    width: min(66vh, 700px);
     background-color: rgb(54, 48, 98);
     border-bottom-left-radius: 100%;
     position:absolute;
@@ -70,12 +72,12 @@ h1 {
 }
 
 .header-img {
-    max-width: min(40vw, 450px);
+    max-width: min(40vh, 450px);
     margin-bottom: 1rem;
     filter: grayscale(100%);
     position: absolute;
-    bottom: 30%;
-    left: 30%;
+    bottom: 20vh;
+    left: 20vh;
     border-radius:30px;
 }
 
@@ -88,8 +90,10 @@ h1 {
 .button-div {
     position: absolute;
     bottom: 10svh;
-    right: 5%;
-    width: clamp(400px, 40%, 100%);
+    right: 3vw;
+    width: clamp(400px, 30vw, 100%);
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -233,6 +237,10 @@ article{
     justify-content: center;
     margin: 0 auto var(--spacing);
     width: 60vw;
+    border-radius: 40px;
+    background-color: var(--primary);
+    padding: var(--spacing);
+    color:white;
 }
 
 .contact {
@@ -280,7 +288,7 @@ footer {
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 1200px) and (min-height:100vw){
 
     header{ 
         display: flex;
@@ -354,22 +362,16 @@ footer {
 
 }
 
-@media (min-width: 700px) and (max-width: 1200px) {
+/* @media ((min-width: 800px) and (max-width: 1200px)) {
     .header-circle {
-        height: 50svh;
-        width: 50svh;
-        border-radius: 50%;
-        position:absolute;
-        top: 38svh;
-        left:0%;
-        display: flex;
-        justify-content: center;
-       align-items: center;
+        height: min( 60svh, 550px);
+        width: min(60svh, 550px);
+
     }
 
     .image-circle {
-        height: 38svh;
-        width: 38svh;
+        height: min(50vh, 450px);
+        width: min(50vh, 450px);
         background-color: rgb(54, 48, 98);
         border-bottom-left-radius: 100%;
         position:absolute;
@@ -382,7 +384,7 @@ footer {
         margin-bottom: 1rem;
         filter: grayscale(100%);
         position: absolute;
-        bottom: 30svh;
+        bottom: 30%;
         left: 30%;
         border-radius:30px;
     }
@@ -391,13 +393,13 @@ footer {
 
     .button-div{
         margin: auto;
-        bottom: 5svh;;
-        width: 100vw;
-        height: 5svh;
+        bottom: 3svh;
+        width: 100%;
         right: 0%;
         display: flex;
         justify-content: center;
     }
+    
     
 
     .about-info{
@@ -417,9 +419,12 @@ footer {
         max-width: 60%;
         object-fit: scale-down;
     }
-
-
+h1{
+    font-size:clamp(20px, 3svh, 75px);
 }
+
+} */
+
 
 
 

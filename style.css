@@ -362,69 +362,6 @@ footer {
 
 }
 
-/* @media ((min-width: 800px) and (max-width: 1200px)) {
-    .header-circle {
-        height: min( 60svh, 550px);
-        width: min(60svh, 550px);
-
-    }
-
-    .image-circle {
-        height: min(50vh, 450px);
-        width: min(50vh, 450px);
-        background-color: rgb(54, 48, 98);
-        border-bottom-left-radius: 100%;
-        position:absolute;
-        top: 0;
-        right:0;
-    }
-    
-    .header-img {
-        max-width: 25svh;
-        margin-bottom: 1rem;
-        filter: grayscale(100%);
-        position: absolute;
-        bottom: 30%;
-        left: 30%;
-        border-radius:30px;
-    }
-
-    
-
-    .button-div{
-        margin: auto;
-        bottom: 3svh;
-        width: 100%;
-        right: 0%;
-        display: flex;
-        justify-content: center;
-    }
-    
-    
-
-    .about-info{
-        flex-direction: column;
-        align-items: center;
-        
-    }
-
-    article{
-        gap:0;
-        margin: 0 auto var(--spacing);
-    }
-
-  
-
-    .article-image {
-        max-width: 60%;
-        object-fit: scale-down;
-    }
-h1{
-    font-size:clamp(20px, 3svh, 75px);
-}
-
-} */
-
 
 
 

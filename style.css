@@ -139,7 +139,7 @@ section {
 
 .about-img {
 
-    width: clamp(100px, 80vw, 450px);
+    width: clamp(100px, 80svh, 450px);
     margin-bottom: 1rem;
     filter: grayscale(100%);
     border-radius: 10px;
@@ -183,10 +183,10 @@ cite {
 .button {
     display: inline-block;
     width: max-content;
-    padding: 1svh;
+    padding: 1dvh;
     border: 5px solid var(--button-color);
     font-weight: bold;
-    font-size: clamp(15px, 2svh, 50px);
+    font-size: min(2dvh, 50px);
     text-decoration: none;
     color: var(--button-color);
     border-radius: 10px;
@@ -290,7 +290,7 @@ footer {
 
 
 
-@media (max-width: 1200px) and (min-height:100vw){
+@media (max-width:1200px) and (min-height:100vw){
 
     header{ 
         display: flex;
@@ -299,11 +299,11 @@ footer {
     }
 
     .header-circle {
-        height: min(50svh, 100vw);
-        width: min(50svh, 100vw);
+        height: min(50dvh, 100vw);
+        width: min(50dvh, 100vw);
         border-radius: 50%;
        left: 0 ;
-        top: 38vh;
+        top: 38dvh;
         margin: auto;
         display: flex;
         justify-content: center;
@@ -311,8 +311,8 @@ footer {
     }
 
     .image-circle {
-        height: min(38svh, 100vw);
-        width: min(38svh, 100vw);
+        height: min(38dvh, 100vw);
+        width: min(38dvh, 100vw);
         background-color: rgb(54, 48, 98);
         border-bottom-left-radius: 100%;
         position:absolute;
@@ -321,7 +321,7 @@ footer {
     }
     
     .header-img {
-        max-width: 25svh;
+        max-width: 25dvh;
         margin-bottom: 1rem;
         filter: grayscale(100%);
         position: absolute;
@@ -333,8 +333,8 @@ footer {
     
 
     .button-div{
-        margin: 1vh auto;
-        bottom: 3svh;
+        margin: 1dvh auto;
+        bottom: 3dvh;
         width: 100%;
         right: 0%;
         display: flex;
@@ -346,14 +346,18 @@ footer {
     .about-info{
         flex-direction: column;
         align-items: center;
-        
+    }
+
+    .about-img {
+
+        width: clamp(100px, 70vw, 450px);
     }
 
     article{
         display:flex;
         flex-direction: column;
         justify-content: center;
-        margin: 1vh auto;
+        margin: 1dvh auto;
         width: 95vw;
 
     }
